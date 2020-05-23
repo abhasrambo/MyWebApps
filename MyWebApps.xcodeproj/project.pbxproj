@@ -13,6 +13,10 @@
 		4E07C0052478D55E00ABD840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E07C0042478D55E00ABD840 /* Assets.xcassets */; };
 		4E07C0082478D55E00ABD840 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E07C0072478D55E00ABD840 /* Preview Assets.xcassets */; };
 		4E07C00B2478D55E00ABD840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E07C0092478D55E00ABD840 /* LaunchScreen.storyboard */; };
+		4E07C0142478D5E300ABD840 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07C0132478D5E300ABD840 /* DetailView.swift */; };
+		4E07C0162478D60000ABD840 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07C0152478D60000ABD840 /* WebView.swift */; };
+		4E07C01E2478D86000ABD840 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07C01D2478D86000ABD840 /* NetworkManager.swift */; };
+		4E07C0202478D87C00ABD840 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07C01F2478D87C00ABD840 /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		4E07C0072478D55E00ABD840 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E07C00A2478D55E00ABD840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E07C00C2478D55E00ABD840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E07C0132478D5E300ABD840 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4E07C0152478D60000ABD840 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4E07C01D2478D86000ABD840 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4E07C01F2478D87C00ABD840 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		4E07BFFD2478D55800ABD840 /* MyWebApps */ = {
 			isa = PBXGroup;
 			children = (
+				4E07C01C2478D84500ABD840 /* Models */,
 				4E07BFFE2478D55800ABD840 /* AppDelegate.swift */,
 				4E07C0002478D55800ABD840 /* SceneDelegate.swift */,
-				4E07C0022478D55800ABD840 /* ContentView.swift */,
+				4E07C0122478D5A700ABD840 /* Views */,
 				4E07C0042478D55E00ABD840 /* Assets.xcassets */,
 				4E07C0092478D55E00ABD840 /* LaunchScreen.storyboard */,
 				4E07C00C2478D55E00ABD840 /* Info.plist */,
@@ -73,6 +82,25 @@
 				4E07C0072478D55E00ABD840 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E07C0122478D5A700ABD840 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E07C0022478D55800ABD840 /* ContentView.swift */,
+				4E07C0132478D5E300ABD840 /* DetailView.swift */,
+				4E07C0152478D60000ABD840 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E07C01C2478D84500ABD840 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E07C01D2478D86000ABD840 /* NetworkManager.swift */,
+				4E07C01F2478D87C00ABD840 /* PostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E07C01E2478D86000ABD840 /* NetworkManager.swift in Sources */,
 				4E07BFFF2478D55800ABD840 /* AppDelegate.swift in Sources */,
+				4E07C0162478D60000ABD840 /* WebView.swift in Sources */,
+				4E07C0142478D5E300ABD840 /* DetailView.swift in Sources */,
 				4E07C0012478D55800ABD840 /* SceneDelegate.swift in Sources */,
+				4E07C0202478D87C00ABD840 /* PostData.swift in Sources */,
 				4E07C0032478D55800ABD840 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
